@@ -14,6 +14,7 @@ $(document).ready(function() {
       $(".designTrack").show();
       $(".logicTrack").hide();
       $(".form").hide();
+
       }
       else {
         $(".dev").empty().prepend(backEnd);
@@ -27,6 +28,7 @@ $(document).ready(function() {
       if($(this).attr('id') == 'largeBackEnd') {
         $('#cSharp').show();
         $('#ruby').hide();
+        $(".intro").hide();
       }
 
     });
@@ -35,6 +37,7 @@ $(document).ready(function() {
       if($(this).attr('id') == 'smallBackEnd') {
         $('#ruby').show();
         $('#cSharp').hide();
+        $(".intro").hide();
 
       }
     });
@@ -42,6 +45,7 @@ $(document).ready(function() {
     $('input[type="radio"]').click(function() {
       if($(this).attr('id') == 'smallFackEnd' || 'largeFrontEnd') {
         $('#css').show();
+        $(".intro").hide();
 
       }
     });

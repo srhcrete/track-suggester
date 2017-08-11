@@ -8,12 +8,16 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1 class="pad">Learn how to Program</h1>
+      <h2 class="pad">What language is right for you?</h2>
+    </div>
     <div class="container">
       <div class="well">
-        <h1>Learn how to Program</h1>
-        <h2>What language is right for you?</h2>
-        <p>Hello! You are probably here because you are interested in learning programming and don't know quite where to start. Don't worry, we'll help you figure out what languages and course tracks might be best suited toward your interests.</p>
-        <p>We'll begin by trying to answer the question of whether or not you are more interested in front end or back end development. This is a good place to start for deciding what kind of developer you want to be! Please fill out the form below to see if you are a natural born front end or back end dev.</p>
+        <div class ="intro">
+          <p class="pad">Hello! You are probably here because you are interested in learning programming and don't know quite where to start. Don't worry, we'll help you figure out what languages and course tracks might be best suited toward your interests.</p>
+          <p class="pad">We'll begin by trying to answer the question of whether or not you are more interested in front end or back end development. This is a good place to start for deciding what kind of developer you want to be! Please fill out the form below to see if you are a natural born front end or back end dev.</p>
+        </div>
       </div>
       <div class="form">
         <form id="frontEndBackEnd">
@@ -28,13 +32,17 @@
               <option value = "logic">Logic
             </select>
           </div>
-          <div class ="well">
-            <label for = "userExperience">Are you most concerned with the user experience or the developer experience?</label>
-            <select id= "userExperience">
-              <option value = "user">I want to make the internet beautiful, fun, and easy to use!</option>
-              <option value = "developer">I want to make the internet fun and easy for others to run and build!</option>
-            </select>
-          </div>
+          <div class ="radio" id="radio1">
+            <h6>Are you most concerned with the user experience or the developer experience?</h6>
+          <label>
+            <input type="radio" name="userExperience" value="frontEnd">
+            I want to make the internet beautiful, fun, and easy to use!
+          </label>
+          <label>
+            <input type="radio" name="userExperience" value="backEnd">
+            I want to make the internet fun and easy for others to run and build!
+          </label>
+        </div>
           <div class="well">
             <button type="submit" class="btn btn-block">Find out if you prefer front end or back end web development!</button>
           </div>
@@ -47,8 +55,8 @@
       </div>   <!--End Intro-->
       <div class="designTrack">
         <div class="well">
-          <h1>Welcome to the Front End design track</h1>
-          <p>Now that we know that you might want to focus your time and energy on front end and web design, let's find out some more information about the kind of place you would like to work. Although both large and small companies need designers for their applications, it is a good idea to start thinking about what type of company you may want to work for once you start developing your new career.</p>
+          <h1 class ="pad">Welcome to the Front End design track</h1>
+          <p class="pad">Now that we know that you might want to focus your time and energy on front end and web design, let's find out some more information about the kind of place you would like to work. Although both large and small companies need designers for their applications, it is a good idea to start thinking about what type of company you may want to work for once you start developing your new career.</p>
           <form>
         </div>
         <div class="well">
@@ -82,7 +90,7 @@
         </form>
         <div class ="well">
           <div id="css">
-            <h2>CSS/Javascript Web Design Track</h2>
+            <h2 class="pad">CSS/Javascript Web Design Track</h2>
             <p><span class="language">CSS</span> is used for designing the presentation of Web pages. With CSS you can manipulate the colors, layouts, and fonts of a page. CSS also allows us to adapt the presenation of the page to various devices.</p>
             <p><span class="language">Javascript</span>  is the most common landuage for web and mobile development because it is the only language understood by all web browsers. It is used to add interactivity and animations to web pages.</p>
             <p><span class="language">Web Design</span>  is the process of determining the layout, colors, text  styles, structure, graphics, images, and use of interactive features on a web page to make a positive and interactive user experience.</p>
@@ -91,8 +99,8 @@
       </div> <!--End design track-->
       <div class="logicTrack">
         <div class="well">
-          <h1>Welcome to the Back End app building track</h1>
-          <p>Now that we know that you might want to focus your time and energy on back end and application building, let's find out some more information about the kind of place you would like to work.</p>
+          <h1 class="pad">Welcome to the Back End app building track</h1>
+          <p class="pad">Now that we know that you might want to focus your time and energy on back end and application building, let's find out some more information about the kind of place you would like to work.</p>
           <form>
         </div>
         <div class="well">
@@ -126,14 +134,14 @@
         </form>
         <div class="well">
           <div id = "cSharp">
-            <h2>C#/.NET Track</h2>
+            <h2 class="pad">C#/.NET Track</h2>
             <p><span class="language">C#</span> is popular amoung larger established businesses and major corporations. It is usually used for building internal software and it is one of the most in-demand languages in the job market. If you like the idea of working for larger companies like, Microsoft, then C# is a great place to start.</p>
             <p><span class="language">.NET</span> is a software framework developed by Microsoft, used to create applications that run on various devices. It compiles and executes programs written in the C# and Visual Basic languages.</p>
           </div>
         </div>
         <div class="well">
           <div id = "ruby">
-            <h2>Ruby/Rails Track</h2>
+            <h2 class="pad">Ruby/Rails Track</h2>
             <p><span class="language">Ruby</span> is popular amoung developers building interactive web applications. Such apps involve creating accounts, entering information, and interacting with dynamic content. Ruby has elegant syntax that is easy to read and write.</p>
             <p><span class="language">Rails</span> is a framework written in Ruby and simplifies many of the common tasks associated with building web applications. Ruby on Rails is most popular amoung startups and smaller companies who are looking to build their product quickly.</p>
           </div>
