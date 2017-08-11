@@ -13,11 +13,13 @@ $(document).ready(function() {
       $(".dev").empty().prepend(frontEnd);
       $(".designTrack").show();
       $(".logicTrack").hide();
+      $(".form").hide();
       }
       else {
         $(".dev").empty().prepend(backEnd);
         $(".logicTrack").show();
         $(".designTrack").hide();
+        $(".form").hide();
       }
     }
 

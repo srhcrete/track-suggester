@@ -1,5 +1,6 @@
 #quote {
   display: none;
+
 }
 .designTrack {
   display: none;
@@ -15,4 +16,17 @@
 }
 #css {
   display: none;
+}
+.language {
+  font-weight: bold;
+  color: #1676ba;
+}
+.form{
+  margin: 5vh;
+  border-style: solid;
+  border-width: medium;
+}
+
+.well {
+  margin: 5vh;
 }
