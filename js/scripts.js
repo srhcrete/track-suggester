@@ -5,6 +5,9 @@ $(document).ready(function() {
     var userExperience = $("select#userExperience").val();
     var frontEnd = "front end";
     var backEnd = "back end";
+    // var companySize = $("input:radio[name=companySize]:checked").val();
+
+
 
     if (designVsLogic) {
       if (designVsLogic === "design"){
@@ -19,6 +22,30 @@ $(document).ready(function() {
         $(".designTrack").hide();
       }
     }
+
+    $('input[type="radio"]').click(function() {
+      if($(this).attr('id') == 'largeBackEnd') {
+        $('#cSharp').show();
+        $('#ruby').hide();
+      }
+
+    });
+
+    $('input[type="radio"]').click(function() {
+      if($(this).attr('id') == 'smallBackEnd') {
+        $('#ruby').show();
+        $('#cSharp').hide();
+
+      }
+    });
+
+    // if (companySize) {
+    //   if (companySize === "Large") {
+    //     $("#cSharp").show();
+    //   }
+    //
+    // }
+
 
 
     $(".name").text(nameInput);

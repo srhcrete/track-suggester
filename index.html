@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Track Suggester for Programming Bootcamp</h1>
+      <h1>Learn how to Program</h1>
       <h2>What language is right for you?</h2>
       <p>Hello! You are probably here because you are interested in learning programming and don't know quite where to start. Don't worry, we'll help you figure out what languages and course tracks might be best suited toward your interests.</p>
       <p>We'll begin by trying to answer the question of whether or not you are more interested in front end or back end development. This is a good place to start for deciding what kind of developer you want to be! Please fill out the form below to see if you are a born front end or back end dev.</p>
@@ -37,12 +37,12 @@
             <button type="submit" class="btn">Find out if you favor front end versus back end web development!</button>
           </div>
         </form>
-      </div>
+      </div> <!--End first form-->
       <div id="quote">
         <p><em>Congratulations, <span class="name"></span>, it looks like you are a natural born <span class="dev"></span> developer!</em></p>
-      </div>
+      </div> <!--End Intro-->
       <div class="designTrack">
-        <h1>Welcome to the Front End Design Track</h1>
+        <h1>Welcome to the Front End design track</h1>
         <p>Now that we know that you might want to focus your time and energy on front end and web design, let's find out some more information about the kind of place you would like to work.</p>
         <form>
           <div class ="radio">
@@ -72,21 +72,21 @@
             </label>
           </div>
         </form>
-      </div>
+      </div> <!--End design track-->
       <div class="logicTrack">
-        <h1>Welcome to the Back End Application Building Track</h1>
+        <h1>Welcome to the Back End application building track</h1>
         <p>Now that we know that you might want to focus your time and energy on back end and application building, let's find out some more information about the kind of place you would like to work.</p>
         <form>
           <div class ="radio">
             <h6><strong>In Which Size Company Would You Prefer to Work?</strong></h6>
             <label>
-              <input type="radio" name="companySize" value="large">
+              <input type="radio" name="companySize" value="large" id="largeBackEnd">
               Large
             </label>
           </div>
           <div class ="radio">
             <label>
-              <input type="radio" name="companySize" value="small">
+              <input type="radio" name="companySize" value="small" id="smallBackEnd">
               Small
             </label>
           </div>
@@ -104,7 +104,17 @@
             </label>
           </div>
         </form>
-      </div>
+        <div id = "cSharp">
+          <h2>C#/.NET Track</h2>
+          <p>C# is popular amoung larger established businesses and major corporations. It is usually used for building internal software and it is one of the most in-demand languages in the job market. If you like the idea of working for larger companies like, Microsoft, then C# is a great place to start.</p>
+          <p>.NET is a software framework developed by Microsoft, used to create applications that run on various devices. It compiles and executes programs written in the C# and Visual Basic languages.</p>
+        </div>
+        <div id = "ruby">
+          <h2>Ruby/Rails Track</h2>
+          <p>Ruby is popular amoung developers building interactive web applications. Such apps involve creating accounts, entering information, and interacting with dynamic content. Ruby has elegant syntax that is easy to read and write.</p>
+          <p>Rails is a framework written in Ruby and simplifies many of the common tasks associated with building web applications. Ruby on Rails is most popular amoung startups and smaller companies who are looking to build their product quickly.</p>
+        </div>
+      </div> <!--End Logic Track-->
     </div>
   </body>
 </html>
