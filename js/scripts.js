@@ -3,16 +3,20 @@ $(document).ready(function() {
     var nameInput = $("input#name").val();
     var designVsLogic = $("select#designVsLogic").val();
     var userExperience = $("select#userExperience").val();
-    var frontEnd = "Front End";
-    var backEnd = "Back End";
+    var frontEnd = "front end";
+    var backEnd = "back end";
 
     if (designVsLogic) {
       if (designVsLogic === "design"){
 
       $(".dev").empty().prepend(frontEnd);
+      $(".designTrack").show();
+      $(".logicTrack").hide();
       }
       else {
         $(".dev").empty().prepend(backEnd);
+        $(".logicTrack").show();
+        $(".designTrack").hide();
       }
     }
 
