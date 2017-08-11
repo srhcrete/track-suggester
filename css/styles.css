@@ -5,6 +5,7 @@
 }
 #quote {
   display: none;
+  font-size: 22px;
 
 }
 .designTrack {
@@ -34,7 +35,7 @@
 }
 
 .well {
-  margin: 5vh;
+  margin: 3vh;
 }
 #radio1 {
   padding: 5vh;

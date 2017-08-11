@@ -11,14 +11,14 @@ $(document).ready(function() {
       if (designVsLogic === "design"){
 
       $(".dev").empty().prepend(frontEnd);
-      $(".designTrack").show();
+      $(".designTrack").fadeIn();
       $(".logicTrack").hide();
       $(".form").hide();
 
       }
       else {
         $(".dev").empty().prepend(backEnd);
-        $(".logicTrack").show();
+        $(".logicTrack").fadeIn();
         $(".designTrack").hide();
         $(".form").hide();
       }
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     $('input[type="radio"]').click(function() {
       if($(this).attr('id') == 'largeBackEnd') {
-        $('#cSharp').show();
+        $('#cSharp').fadeIn();
         $('#ruby').hide();
         $(".intro").hide();
       }
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     $('input[type="radio"]').click(function() {
       if($(this).attr('id') == 'smallBackEnd') {
-        $('#ruby').show();
+        $('#ruby').fadeIn();
         $('#cSharp').hide();
         $(".intro").hide();
 
@@ -44,14 +44,22 @@ $(document).ready(function() {
 
     $('input[type="radio"]').click(function() {
       if($(this).attr('id') == 'smallFackEnd' || 'largeFrontEnd') {
-        $('#css').show();
+        $('#css').fadeIn();
         $(".intro").hide();
 
       }
     });
 
+    $( "#refresh1" ).click(function() {
+    location.reload(true);
+    });
+
+    $( "#refresh2" ).click(function() {
+    location.reload(true);
+    });
+
     $(".name").text(nameInput);
-    $("#quote").show();
+    $("#quote").fadeIn();
 
     event.preventDefault();
   });
