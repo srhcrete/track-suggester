@@ -5,8 +5,6 @@ $(document).ready(function() {
     var userExperience = $("select#userExperience").val();
     var frontEnd = "front end";
     var backEnd = "back end";
-    // var companySize = $("input:radio[name=companySize]:checked").val();
-
 
 
     if (designVsLogic) {
@@ -39,14 +37,12 @@ $(document).ready(function() {
       }
     });
 
-    // if (companySize) {
-    //   if (companySize === "Large") {
-    //     $("#cSharp").show();
-    //   }
-    //
-    // }
+    $('input[type="radio"]').click(function() {
+      if($(this).attr('id') == 'smallFackEnd' || 'largeFrontEnd') {
+        $('#css').show();
 
-
+      }
+    });
 
     $(".name").text(nameInput);
     $("#quote").show();
